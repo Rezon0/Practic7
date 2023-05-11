@@ -4,17 +4,17 @@ let selectedImages = {
   };
 
   function selectImage(event) {
-    const container = event.target.closest('.image-container');
+    const container = event.target.closest('.image-container'); // closest ищет ближайший родительский элемент, подходящий под указанный CSS селектор
     const images = container.getElementsByTagName('img');
 
     for (let i = 0; i < images.length; i++) {
-      images[i].classList.remove('selected');
+      images[i].classList.remove('selected'); // Удаляем класс
     }
 
     const selectedImage = event.target;
-    selectedImage.classList.add('selected');
+    selectedImage.classList.add('selected'); // Добавляем класс
 
-    selectedImages[container.id] = selectedImage;
+    selectedImages[container.id] = selectedImage; // Да
   }
 
   function swapImages() {
