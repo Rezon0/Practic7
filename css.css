@@ -1,7 +1,7 @@
 .image-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap; // Eсли элементы не помещаются во flex-контейнер, то создает дополнительные ряды в контейнере
+    justify-content: space-around; // Элементы равномерно распределены вдоль главной оси контейнера
     margin-bottom: 20px;
   }
 
